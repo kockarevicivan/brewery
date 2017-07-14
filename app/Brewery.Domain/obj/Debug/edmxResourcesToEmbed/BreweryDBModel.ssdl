@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BreweryDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Beer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" />
+    <Property Name="AlcoholPercentage" Type="decimal" Precision="6" Scale="3" Nullable="false" />
+    <Property Name="IBU" Type="decimal" Precision="6" Scale="3" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="BeerTypeId" Type="int" Nullable="false" />
+    <Property Name="BreweryId" Type="int" />
+  </EntityType>
+  <EntityType Name="BeerType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Brewery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" />
+    <Property Name="PIN" Type="nvarchar" MaxLength="256" />
+    <Property Name="State" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <Association Name="FK_Beer_BeerType">
+    <End Role="BeerType" Type="Self.BeerType" Multiplicity="1" />
+    <End Role="Beer" Type="Self.Beer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="BeerType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beer">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Beer_Brewery">
+    <End Role="Brewery" Type="Self.Brewery" Multiplicity="1" />
+    <End Role="Beer" Type="Self.Beer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Brewery">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beer">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BreweryDBModelStoreContainer">
+    <EntitySet Name="Beer" EntityType="Self.Beer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BeerType" EntityType="Self.BeerType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Brewery" EntityType="Self.Brewery" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Beer_BeerType" Association="Self.FK_Beer_BeerType">
+      <End Role="BeerType" EntitySet="BeerType" />
+      <End Role="Beer" EntitySet="Beer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Beer_Brewery" Association="Self.FK_Beer_Brewery">
+      <End Role="Brewery" EntitySet="Brewery" />
+      <End Role="Beer" EntitySet="Beer" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

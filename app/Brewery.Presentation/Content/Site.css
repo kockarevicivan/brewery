@@ -1,0 +1,40 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#new-beer-wrapper,
+#filter-wrapper,
+#table-wrapper {
+    margin-bottom: 60px;
+}
+
+#buttons-wrapper,
+#buttons-wrapper > button {
+    float: right;
+}
+
+#buttons-wrapper > button:first-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#buttons-wrapper > button:nth-child(2) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+tr > td {
+    padding: 5px;
+}
+
+thead > tr,
+tbody > tr:nth-child(2n) {
+    background-color: lightgray;
+}

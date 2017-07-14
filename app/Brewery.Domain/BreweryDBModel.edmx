@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BreweryDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Beer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" />
+          <Property Name="AlcoholPercentage" Type="decimal" Precision="6" Scale="3" Nullable="false" />
+          <Property Name="IBU" Type="decimal" Precision="6" Scale="3" Nullable="false" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="BeerTypeId" Type="int" Nullable="false" />
+          <Property Name="BreweryId" Type="int" />
+        </EntityType>
+        <EntityType Name="BeerType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="Brewery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" />
+          <Property Name="PIN" Type="nvarchar" MaxLength="256" />
+          <Property Name="State" Type="nvarchar" MaxLength="128" />
+        </EntityType>
+        <Association Name="FK_Beer_BeerType">
+          <End Role="BeerType" Type="Self.BeerType" Multiplicity="1" />
+          <End Role="Beer" Type="Self.Beer" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BeerType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beer">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Beer_Brewery">
+          <End Role="Brewery" Type="Self.Brewery" Multiplicity="1" />
+          <End Role="Beer" Type="Self.Beer" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Brewery">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beer">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BreweryDBModelStoreContainer">
+          <EntitySet Name="Beer" EntityType="Self.Beer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BeerType" EntityType="Self.BeerType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Brewery" EntityType="Self.Brewery" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Beer_BeerType" Association="Self.FK_Beer_BeerType">
+            <End Role="BeerType" EntitySet="BeerType" />
+            <End Role="Beer" EntitySet="Beer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Beer_Brewery" Association="Self.FK_Beer_Brewery">
+            <End Role="Brewery" EntitySet="Brewery" />
+            <End Role="Beer" EntitySet="Beer" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BreweryDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Beer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="AlcoholPercentage" Type="Decimal" Precision="6" Scale="3" Nullable="false" />
+          <Property Name="IBU" Type="Decimal" Precision="6" Scale="3" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="BeerTypeId" Type="Int32" Nullable="false" />
+          <Property Name="BreweryId" Type="Int32" />
+          <NavigationProperty Name="BeerType" Relationship="Self.FK_Beer_BeerType" FromRole="Beer" ToRole="BeerType" />
+          <NavigationProperty Name="Brewery" Relationship="Self.FK_Beer_Brewery" FromRole="Beer" ToRole="Brewery" />
+        </EntityType>
+        <EntityType Name="BeerType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Beer" Relationship="Self.FK_Beer_BeerType" FromRole="BeerType" ToRole="Beer" />
+        </EntityType>
+        <EntityType Name="Brewery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="PIN" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="State" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Beer" Relationship="Self.FK_Beer_Brewery" FromRole="Brewery" ToRole="Beer" />
+        </EntityType>
+        <Association Name="FK_Beer_BeerType">
+          <End Role="BeerType" Type="Self.BeerType" Multiplicity="1" />
+          <End Role="Beer" Type="Self.Beer" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BeerType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beer">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Beer_Brewery">
+          <End Role="Brewery" Type="Self.Brewery" Multiplicity="1" />
+          <End Role="Beer" Type="Self.Beer" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Brewery">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beer">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BreweryDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Beers" EntityType="Self.Beer" />
+          <EntitySet Name="BeerTypes" EntityType="Self.BeerType" />
+          <EntitySet Name="Breweries" EntityType="Self.Brewery" />
+          <AssociationSet Name="FK_Beer_BeerType" Association="Self.FK_Beer_BeerType">
+            <End Role="BeerType" EntitySet="BeerTypes" />
+            <End Role="Beer" EntitySet="Beers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Beer_Brewery" Association="Self.FK_Beer_Brewery">
+            <End Role="Brewery" EntitySet="Breweries" />
+            <End Role="Beer" EntitySet="Beers" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BreweryDBModelStoreContainer" CdmEntityContainer="BreweryDBEntities">
+          <EntitySetMapping Name="Beers">
+            <EntityTypeMapping TypeName="BreweryDBModel.Beer">
+              <MappingFragment StoreEntitySet="Beer">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="AlcoholPercentage" ColumnName="AlcoholPercentage" />
+                <ScalarProperty Name="IBU" ColumnName="IBU" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="BeerTypeId" ColumnName="BeerTypeId" />
+                <ScalarProperty Name="BreweryId" ColumnName="BreweryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BeerTypes">
+            <EntityTypeMapping TypeName="BreweryDBModel.BeerType">
+              <MappingFragment StoreEntitySet="BeerType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Breweries">
+            <EntityTypeMapping TypeName="BreweryDBModel.Brewery">
+              <MappingFragment StoreEntitySet="Brewery">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="PIN" ColumnName="PIN" />
+                <ScalarProperty Name="State" ColumnName="State" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,127 @@
+﻿<div id="new-beer-wrapper">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name">
+    </div>
+
+    <div class="form-group">
+        <label for="type">Vrsta:</label>
+        <select class="form-control" id="type">
+            <option>Lager</option>
+            <option>Lager</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="alcohol-percentage">Procenat alkohola:</label>
+        <input type="text" class="form-control" id="alcohol-percentage">
+    </div>
+
+    <div class="form-group">
+        <label for="ibu">IBU:</label>
+        <input type="text" class="form-control" id="ibu">
+    </div>
+
+    <div class="form-group">
+        <label for="quantity">Količina na stanju:</label>
+        <input type="text" class="form-control" id="quantity">
+    </div>
+
+    <div class="form-group">
+        <label for="brewery">Pivara:</label>
+        <select class="form-control" id="brewery">
+            <option>Apatinska pivara</option>
+            <option>Heineken brewery</option>
+        </select>
+    </div>
+
+    <button class="btn btn-primary">Dodaj</button>
+</div>
+
+<div id="filter-wrapper">
+    <div class="form-group">
+        <label for="filter-name">Name:</label>
+        <input type="text" class="form-control" id="filter-name">
+    </div>
+
+    <div class="form-group">
+        <label for="filter-min-ibu">Minimalni IBU:</label>
+        <input type="text" class="form-control" id="filter-min-ibu">
+    </div>
+
+    <div class="form-group">
+        <label for="filter-max-ibu">Maksimalni IBU:</label>
+        <input type="text" class="form-control" id="filter-max-ibu">
+    </div>
+
+    <div class="form-group">
+        <label for="brewery-filter">Naziv pivare:</label>
+        <input type="text" class="form-control" id="brewery-filter">
+    </div>
+
+    <button class="btn btn-primary">Filtriraj</button>
+</div>
+
+<div id="table-wrapper">
+    <div>
+        <button class="btn btn-primary">Nestalo</button>
+
+        <div id="buttons-wrapper" style="float: right;">
+            <button class="btn btn-info">Previous</button>
+            <button class="btn btn-primary">Next</button>
+        </div>
+    </div>
+    <table class="table-bordered" style="width: 100%">
+        <thead>
+            <tr>
+                <td>Naziv</td>
+                <td>Vrsta</td>
+                <td>Procenat alkohola</td>
+                <td>IBU</td>
+                <td>Količina na stanju</td>
+                <td>Pivara</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jelen</td>
+                <td>Svetlo</td>
+                <td>5,3%</td>
+                <td>24</td>
+                <td>14</td>
+                <td>Apatinska pivara</td>
+                <td>
+                    <button class="btn btn-danger">Obriši</button>
+                    <button class="btn btn-warning">Izmeni</button>
+                    <button class="btn btn-warning">Izmeni na ovoj</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Jelen</td>
+                <td>Svetlo</td>
+                <td>5,3%</td>
+                <td>24</td>
+                <td>14</td>
+                <td>Apatinska pivara</td>
+                <td>
+                    <button class="btn btn-danger">Obriši</button>
+                    <button class="btn btn-warning">Izmeni</button>
+                    <button class="btn btn-warning">Izmeni na ovoj</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Jelen</td>
+                <td>Svetlo</td>
+                <td>5,3%</td>
+                <td>24</td>
+                <td>14</td>
+                <td>Apatinska pivara</td>
+                <td>
+                    <button class="btn btn-danger">Obriši</button>
+                    <button class="btn btn-warning">Izmeni</button>
+                    <button class="btn btn-warning">Izmeni na ovoj</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BreweryDBModelStoreContainer" CdmEntityContainer="BreweryDBEntities">
+    <EntitySetMapping Name="Beers">
+      <EntityTypeMapping TypeName="BreweryDBModel.Beer">
+        <MappingFragment StoreEntitySet="Beer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AlcoholPercentage" ColumnName="AlcoholPercentage" />
+          <ScalarProperty Name="IBU" ColumnName="IBU" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="BeerTypeId" ColumnName="BeerTypeId" />
+          <ScalarProperty Name="BreweryId" ColumnName="BreweryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BeerTypes">
+      <EntityTypeMapping TypeName="BreweryDBModel.BeerType">
+        <MappingFragment StoreEntitySet="BeerType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Breweries">
+      <EntityTypeMapping TypeName="BreweryDBModel.Brewery">
+        <MappingFragment StoreEntitySet="Brewery">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PIN" ColumnName="PIN" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

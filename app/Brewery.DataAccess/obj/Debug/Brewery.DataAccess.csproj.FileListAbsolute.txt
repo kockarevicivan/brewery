@@ -1,0 +1,28 @@
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\Brewery.DataAccess.dll.config
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\Brewery.DataAccess.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\Brewery.DataAccess.pdb
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\Brewery.Commons.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\Brewery.Domain.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\Brewery.Commons.pdb
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\Brewery.Domain.pdb
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\obj\Debug\Brewery.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\obj\Debug\Brewery.DataAccess.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.DataAccess\obj\Debug\Brewery.DataAccess.pdb
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\Brewery.DataAccess.dll.config
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\Brewery.DataAccess.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\Brewery.DataAccess.pdb
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\Brewery.Commons.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\Brewery.Domain.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\Brewery.Commons.pdb
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\Brewery.Domain.pdb
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\obj\Debug\Brewery.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\obj\Debug\Brewery.DataAccess.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.DataAccess\obj\Debug\Brewery.DataAccess.pdb

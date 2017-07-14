@@ -1,0 +1,9 @@
+﻿
+namespace Brewery.Presentation.Models
+{
+    public class BeerTypeViewmodel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+}

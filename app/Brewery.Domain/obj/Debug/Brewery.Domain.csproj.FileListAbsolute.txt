@@ -1,0 +1,18 @@
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\bin\Debug\Brewery.Domain.dll.config
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\bin\Debug\Brewery.Domain.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\bin\Debug\Brewery.Domain.pdb
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\obj\Debug\Brewery.Domain.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Domain\obj\Debug\Brewery.Domain.pdb
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\bin\Debug\Brewery.Domain.dll.config
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\bin\Debug\Brewery.Domain.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\bin\Debug\Brewery.Domain.pdb
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\obj\Debug\Brewery.Domain.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.Domain\obj\Debug\Brewery.Domain.pdb

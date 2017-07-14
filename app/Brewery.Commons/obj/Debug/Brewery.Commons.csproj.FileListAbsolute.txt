@@ -1,0 +1,19 @@
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\bin\Debug\Brewery.Commons.dll.config
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\bin\Debug\Brewery.Commons.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\bin\Debug\Brewery.Commons.pdb
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\obj\Debug\Brewery.Commons.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\obj\Debug\Brewery.Commons.dll
+C:\Users\Ivan\documents\visual studio 2015\Projects\Brewery\Brewery.Commons\obj\Debug\Brewery.Commons.pdb
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\bin\Debug\Brewery.Commons.dll.config
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\bin\Debug\Brewery.Commons.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\bin\Debug\Brewery.Commons.pdb
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\obj\Debug\Brewery.Commons.dll
+C:\Users\Ivan\Desktop\Brewery\Brewery.Commons\obj\Debug\Brewery.Commons.pdb
